@@ -29,3 +29,7 @@ Den må ligge på en HTTPS-adresse for at PWA-funksjoner skal fungere best. En e
 Dette er en PWA-prototype, ikke en full native iOS-app. Safari/web-apper har ikke samme bakgrunns-geofencing som Core Location i en native app. For en produksjonsapp som skal varsle pålitelig mens appen er lukket, bør vi senere bygge en native iOS-versjon og distribuere den via TestFlight/App Store.
 
 OpenStreetMap/Nominatim brukes til kart og stedsøk i prototypen. For produksjon bør vi vurdere en kommersiell kart-/søketjeneste og deres vilkår/rate limits.
+
+
+## Viktig på iPhone
+Åpne siden i Safari og velg **Del → Legg til på Hjem-skjermen**. Start deretter Nærme fra det nye ikonet. Denne versjonen lagrer påminnelser med en verifisert lokal lagring og gir en tydelig feilmelding hvis Safari nekter lagring.
