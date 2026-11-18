@@ -1,0 +1,11 @@
+{
+  "name":"Nærme",
+  "short_name":"Nærme",
+  "description":"Stedbaserte huskelapper for iPhone",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#ffffff",
+  "theme_color":"#0b84ff",
+  "lang":"no",
+  "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
