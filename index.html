@@ -14,24 +14,16 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="app">
 <header>
-  <div>
-    <div class="brand">Nærme</div>
-    <div class="tagline">Husk det når du trenger det.</div>
-  </div>
-  <button id="locateBtn" class="iconbtn" aria-label="Finn meg">⌖</button>
+  <div><div class="brand">Nærme</div><div class="tagline">Husk det når du trenger det.</div></div>
+  <button id="locateBtn" class="iconbtn">⌖</button>
 </header>
 
 <main>
   <section id="map"></section>
-
   <section class="sheet">
     <div class="grabber"></div>
-    <div class="sheet-head">
-      <h2>Dine påminnelser</h2>
-      <span id="count" class="count">0</span>
-    </div>
+    <div class="sheet-head"><h2>Dine påminnelser</h2><span id="count" class="count">0</span></div>
     <div id="empty" class="empty">
       <div class="empty-icon">📍</div>
       <strong>Ingen påminnelser ennå</strong>
@@ -46,44 +38,34 @@
 <div id="modal" class="modal hidden">
   <div class="backdrop"></div>
   <div class="dialog">
-    <div class="dialog-top">
-      <h2>Ny påminnelse</h2>
-      <button id="closeBtn" class="close">×</button>
-    </div>
-
+    <div class="dialog-top"><h2>Ny påminnelse</h2><button id="closeBtn" class="close">×</button></div>
     <label>Hva skal du huske?</label>
     <input id="title" maxlength="80" placeholder="F.eks. Kjøp melk" autocomplete="off">
 
     <label>Hvor?</label>
-    <div class="searchrow">
-      <input id="place" placeholder="Søk etter butikk eller sted" autocomplete="off">
-      <button id="searchBtn">Søk</button>
-    </div>
+    <div class="searchrow"><input id="place" placeholder="Søk etter butikk eller sted" autocomplete="off"><button id="searchBtn">Søk</button></div>
     <div id="results" class="results"></div>
-
     <div id="selected" class="selected hidden"></div>
 
     <label>Varsle meg når jeg er</label>
     <div class="chips" id="radius">
-      <button data-radius="100">100 m</button>
-      <button data-radius="250">250 m</button>
-      <button data-radius="500" class="active">500 m</button>
-      <button data-radius="1000">1 km</button>
-      <button data-radius="2000">2 km</button>
+      <button data-radius="100">100 m</button><button data-radius="250">250 m</button>
+      <button data-radius="500" class="active">500 m</button><button data-radius="1000">1 km</button><button data-radius="2000">2 km</button>
     </div>
 
-    <label class="switchrow">
-      <span><strong>Hver gang</strong><small>Påminnelsen kan brukes igjen</small></span>
-      <input id="repeat" type="checkbox">
-      <span class="switch"></span>
-    </label>
+    <label class="switchrow"><span><strong>Hver gang</strong><small>Påminnelsen kan brukes igjen</small></span><input id="repeat" type="checkbox"><span class="switch"></span></label>
 
-    <button id="saveBtn" class="primary">Lagre påminnelse</button>
-    <p id="status" class="status"></p>
+    <div id="status" class="status"></div>
+    <div class="buttonrow">
+      <button id="testBtn" class="secondary">Test varsel</button>
+      <button id="saveBtn" class="primary">Lagre påminnelse</button>
+    </div>
   </div>
 </div>
 
+<div id="toast" class="toast"></div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="app.js"></script>
+<script src="app.js?v=20261119"></script>
 </body>
 </html>
